@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\bin\Debug\net7.0\Arguments.exe
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\bin\Debug\net7.0\Arguments.deps.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\bin\Debug\net7.0\Arguments.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\bin\Debug\net7.0\Arguments.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\bin\Debug\net7.0\Arguments.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\refint\Arguments.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\Arguments.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Arguments\obj\Debug\net7.0\ref\Arguments.dll
