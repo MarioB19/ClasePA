@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\bin\Debug\net7.0\Operators.exe
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\bin\Debug\net7.0\Operators.deps.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\bin\Debug\net7.0\Operators.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\bin\Debug\net7.0\Operators.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\bin\Debug\net7.0\Operators.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\refint\Operators.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\Operators.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\Operators\obj\Debug\net7.0\ref\Operators.dll

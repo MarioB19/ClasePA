@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj": {}
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Operators\\Operators.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj": {
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Operators\\Operators.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj",
-        "projectName": "Arguments",
-        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj",
+        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Operators\\Operators.csproj",
+        "projectName": "Operators",
+        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Operators\\Operators.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\obj\\",
+        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Operators\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

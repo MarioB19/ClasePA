@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LDiwcL9797MaNU2QXovKicXs+HI177zOZ8YskSE+Hq6m/plvydjGlktbQ3OXD33R2XFdKhPdm/e48Ucz4/A+lA==",
+  "dgSpecHash": "wE/CHDGKpUm6bGoVwdblqVAN0814hvfp3GTd/L6oZOj/h3nK3qciH5JeNSq/I9WQeaJ0gVWWCiSA4dqmlwYFnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
+  "projectFilePath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

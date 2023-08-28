@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj": {}
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj": {
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\obj\\",
+        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

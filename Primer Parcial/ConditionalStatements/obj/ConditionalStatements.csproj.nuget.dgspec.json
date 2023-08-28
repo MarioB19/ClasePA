@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj": {}
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj": {
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj",
-        "projectName": "Arguments",
-        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\Arguments.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj",
+        "projectName": "ConditionalStatements",
+        "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\Arguments\\obj\\",
+        "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

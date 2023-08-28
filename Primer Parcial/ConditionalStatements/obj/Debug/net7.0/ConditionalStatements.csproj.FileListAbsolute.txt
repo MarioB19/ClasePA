@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\bin\Debug\net7.0\ConditionalStatements.exe
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\bin\Debug\net7.0\ConditionalStatements.deps.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\bin\Debug\net7.0\ConditionalStatements.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\bin\Debug\net7.0\ConditionalStatements.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\bin\Debug\net7.0\ConditionalStatements.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\refint\ConditionalStatements.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ConditionalStatements.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\ConditionalStatements\obj\Debug\net7.0\ref\ConditionalStatements.dll
