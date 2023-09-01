@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj": {}
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\CastingAndConverting\\CastingAndConverting.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj": {
+    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\CastingAndConverting\\CastingAndConverting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj",
-        "projectName": "ConditionalStatements",
-        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\ConditionalStatements.csproj",
+        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\CastingAndConverting\\CastingAndConverting.csproj",
+        "projectName": "CastingAndConverting",
+        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\CastingAndConverting\\CastingAndConverting.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\ConditionalStatements\\obj\\",
+        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\CastingAndConverting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

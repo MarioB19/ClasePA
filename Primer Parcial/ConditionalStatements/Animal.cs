@@ -46,6 +46,9 @@ public class Animal
 
 public class Cat : Animal{
 
+    public bool is poisoonos;
+    
+
 }
 
 public class Pig:Animal{
@@ -55,3 +58,20 @@ public class Pig:Animal{
 public class Dog : Animal{
 
 }
+
+
+/*
+
+
+simplified switch | minamilist switch
+
+message = animal switch
+
+// => Lambda
+
+Cat threeLegCat when threeLegCat.Legs == 3 =>
+
+
+
+
+*/

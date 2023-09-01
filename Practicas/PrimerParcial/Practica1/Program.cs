@@ -27,7 +27,7 @@ WriteLine("{0,-74}\n{1,-8}{2,-31}{3,4}{4,31}\n{5,-74}",
         //recorremos nuestra Lista de tuplas
         foreach (var item in data)
         {
-            //Imprimimos cada fila de nuestra tabla , que corresponde a nuestra lista , dandole el formato (margen) adecuado
+            //Imprimimos cada fila de nuestra tabla , que corresponde a nuestra lista , dandole el formatting (margen) adecuado
             Console.WriteLine("{0,-8}{1,-5}{2,30}{3,31}",
             item.typeName, item.size, item.minValue, item.maxValue);
         }

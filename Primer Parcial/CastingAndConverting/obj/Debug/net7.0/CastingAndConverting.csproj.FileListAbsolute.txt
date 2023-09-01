@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\bin\Debug\net7.0\CastingAndConverting.exe
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\bin\Debug\net7.0\CastingAndConverting.deps.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\bin\Debug\net7.0\CastingAndConverting.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\bin\Debug\net7.0\CastingAndConverting.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\bin\Debug\net7.0\CastingAndConverting.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\refint\CastingAndConverting.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\CastingAndConverting.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\CastingAndConverting\obj\Debug\net7.0\ref\CastingAndConverting.dll
