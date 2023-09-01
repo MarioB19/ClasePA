@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\bin\Debug\net7.0\Practica1.exe
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\bin\Debug\net7.0\Practica1.deps.json
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\bin\Debug\net7.0\Practica1.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\bin\Debug\net7.0\Practica1.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\bin\Debug\net7.0\Practica1.pdb
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\refint\Practica1.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.pdb
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\Practica1.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\PrimerParcial\Practica1\obj\Debug\net7.0\ref\Practica1.dll
