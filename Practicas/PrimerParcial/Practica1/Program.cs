@@ -18,10 +18,10 @@ WriteLine("{0,-74}\n{1,-8}{2,-31}{3,4}{4,31}\n{5,-74}",
             ("float", $"{sizeof(float)}", $"{float.MinValue}", $"{float.MaxValue}"),
             ("double", $"{sizeof(double)}", $"{double.MinValue}", $"{double.MaxValue}"),
             ("decimal", $"{sizeof(decimal)}", $"{decimal.MinValue}", $"{decimal.MaxValue}")
+            
             //tipoDato , sizeof(tipoDato) *obtenemos los bytes de memoria del tipo de dato
             //tipoDato.MinValue *Valor minimo que puede tomar dicho dato , 
             //tipoDato.MinValue *Valor maximo que puede tomar dicho dato , 
-            
         };
 
         //recorremos nuestra Lista de tuplas
@@ -31,13 +31,10 @@ WriteLine("{0,-74}\n{1,-8}{2,-31}{3,4}{4,31}\n{5,-74}",
             Console.WriteLine("{0,-8}{1,-5}{2,30}{3,31}",
             item.typeName, item.size, item.minValue, item.maxValue);
         }
-
+        
 //Footer
 WriteLine("{0,-74}",
 "--------------------------------------------------------------------------");
-
-
-
 
 
 

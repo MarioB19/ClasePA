@@ -85,3 +85,22 @@ WriteLine(something.ToString());
 
 
 #endregion
+
+
+
+int count = int.Parse("13"); 
+
+//Tryparse
+
+//int count = int.Parse("abc"); //SystemFormatException
+
+
+WriteLine("How many students are?");
+string? input = ReadLine();
+
+if(int.TryParse(input, out int cuenta)){
+    WriteLine($"There are {cuenta} students");
+}
+else{
+    WriteLine("could't convert");
+}

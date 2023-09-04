@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\bin\Debug\net7.0\HandlingExceptions.exe
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\bin\Debug\net7.0\HandlingExceptions.deps.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\bin\Debug\net7.0\HandlingExceptions.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\bin\Debug\net7.0\HandlingExceptions.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\bin\Debug\net7.0\HandlingExceptions.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\refint\HandlingExceptions.dll
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.pdb
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\HandlingExceptions.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\Primer Parcial\HandlingExceptions\obj\Debug\net7.0\ref\HandlingExceptions.dll
