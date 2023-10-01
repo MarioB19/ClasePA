@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Romanos\bin\Debug\net7.0\Romanos.exe
+C:\Users\brand\Desktop\Romanos\bin\Debug\net7.0\Romanos.deps.json
+C:\Users\brand\Desktop\Romanos\bin\Debug\net7.0\Romanos.runtimeconfig.json
+C:\Users\brand\Desktop\Romanos\bin\Debug\net7.0\Romanos.dll
+C:\Users\brand\Desktop\Romanos\bin\Debug\net7.0\Romanos.pdb
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.AssemblyInfo.cs
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.dll
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\refint\Romanos.dll
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.pdb
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\Romanos.genruntimeconfig.cache
+C:\Users\brand\Desktop\Romanos\obj\Debug\net7.0\ref\Romanos.dll

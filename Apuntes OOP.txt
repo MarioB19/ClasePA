@@ -1,0 +1,38 @@
+Apuntes OOP
+
+Encapsulation ( Control)
+
+
+Composition
+
+Class car : N doors , N wheels , N passengers 
+
+
+Aggregation
+Es la forma mas simple de expresar Single Responsability
+
+
+Combine
+
+
+
+
+Inheritance
+Necesita una clase base y una clase derivada.
+
+
+Abstraction
+ABSTRACT Class
+Override
+Los metodos en una clase abstracta no tienen cuerpo
+
+Metodo virtuales , dos tipos de metodos virtuales : 
+1.- Metodo virtual puro
+2.- Metodo virtual
+
+Podemos sobrecargar esos metodos con herencias.
+
+Polymorphism
+Que una clase derivida  pueda ser sobrecargada por una clase base , en uno de sus metodos.
+
+

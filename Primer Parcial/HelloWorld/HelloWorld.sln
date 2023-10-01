@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandlingExceptions", "..\Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "..\FizzBuzz\FizzBuzz.csproj", "{DEB1EE60-65FA-4138-914C-9DD9677C9F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examen1", "..\..\examen1\examen1.csproj", "{6B004DD8-A6BC-4979-B257-41F93A9D4B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DEB1EE60-65FA-4138-914C-9DD9677C9F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB1EE60-65FA-4138-914C-9DD9677C9F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEB1EE60-65FA-4138-914C-9DD9677C9F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B004DD8-A6BC-4979-B257-41F93A9D4B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B004DD8-A6BC-4979-B257-41F93A9D4B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B004DD8-A6BC-4979-B257-41F93A9D4B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B004DD8-A6BC-4979-B257-41F93A9D4B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

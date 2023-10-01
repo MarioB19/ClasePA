@@ -5540,11 +5540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\CalculatorUnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\CalculatorUnitTesting.csproj",
       "projectName": "CalculatorUnitTesting",
-      "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\CalculatorUnitTesting.csproj",
+      "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\CalculatorUnitTesting.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\obj\\",
+      "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorUnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5566,8 +5566,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {
-              "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj"
+            "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {
+              "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj"
             }
           }
         }

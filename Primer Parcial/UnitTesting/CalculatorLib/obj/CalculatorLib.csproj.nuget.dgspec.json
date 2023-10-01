@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {}
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
         "projectName": "CalculatorLib",
-        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
+        "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\obj\\",
+        "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

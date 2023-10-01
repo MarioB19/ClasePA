@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CSnOGgE5B+CwNANOIGjoJBx9gw2i/BXjmmFMmRHMXjpx/f94i/dBeufGZEyQNCTeLlx+MyuRuMbjm9eqmJ+7sg==",
+  "dgSpecHash": "CSL5NFjiskWCkaStZLl4/C5snjtYEmtfmns5qQjdgDNNokqiCacf2lRe2dYvUlDmrQfKyKW8xaGzurWrplFzQA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
+  "projectFilePath": "C:\\Users\\brand\\Desktop\\Clase C#\\Primer Parcial\\UnitTesting\\CalculatorLib\\CalculatorLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

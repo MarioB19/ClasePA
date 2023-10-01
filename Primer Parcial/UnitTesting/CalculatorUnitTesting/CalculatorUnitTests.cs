@@ -149,6 +149,8 @@ public class UnitTest1
 
 
 
+    
+
     /*
         #region verif
 
@@ -157,9 +159,9 @@ public class UnitTest1
          [Fact] //Annotation : Verbos que le puedo poner a mis funcione
          public  void VerifAdd(){
             // Arrange
-            string a = "10";
-            string b = "1";
-            double expect = double.Parse(a) + double.Parse(b);
+            double? a = 10.0;
+            double? b = 2.0;
+            double? expect = a +b;
             Calculator calc = new();
 
             Assert.Equal(expect,calc.Add(a,b));
@@ -171,9 +173,9 @@ public class UnitTest1
         [Fact] //Annotation : Verbos que le puedo poner a mis funcione
          public  void VerifDiv(){
             // Arrange
-            string a = "20.5";
-            string b = "10";
-            double expect = double.Parse(a) / double.Parse(b);
+            double ?a = 20.5;
+            double ?b = 10.4;
+            double ?expect = a/b;
             Calculator calc = new();
 
 
@@ -189,7 +191,9 @@ public class UnitTest1
 
         #endregion
 
-        */
+
+*/
+        
 
 
 

@@ -1,0 +1,11 @@
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\bin\Debug\net7.0\Archivos.deps.json
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\bin\Debug\net7.0\Archivos.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\bin\Debug\net7.0\Archivos.pdb
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\refint\Archivos.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\Archivos.pdb
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Archivos\obj\Debug\net7.0\ref\Archivos.dll

@@ -22,5 +22,12 @@ for(int i = 0;i<nums;i++){
     }
 
     WriteLine("");
+
+
+    for(int x=0;x<1000001;x++)
+    {
+        Write("a");
+
+    }
     
 }

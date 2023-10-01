@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\examen1\bin\Debug\net7.0\examen1.exe
+C:\Users\brand\Desktop\Clase C#\examen1\bin\Debug\net7.0\examen1.deps.json
+C:\Users\brand\Desktop\Clase C#\examen1\bin\Debug\net7.0\examen1.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\examen1\bin\Debug\net7.0\examen1.dll
+C:\Users\brand\Desktop\Clase C#\examen1\bin\Debug\net7.0\examen1.pdb
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.dll
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\refint\examen1.dll
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.pdb
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\examen1.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\examen1\obj\Debug\net7.0\ref\examen1.dll
