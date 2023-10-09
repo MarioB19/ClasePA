@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemApp", "..\SystemApp\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "..\Libraries\Libraries.csproj", "{50EDB369-4921-4F59-AB3E-1C03A3D1E13E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSerialization", "..\UnitTestingSerialization\UnitTestingSerialization.csproj", "{D9C1D1A5-1F80-4CE3-BF7F-F96027046665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{50EDB369-4921-4F59-AB3E-1C03A3D1E13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50EDB369-4921-4F59-AB3E-1C03A3D1E13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50EDB369-4921-4F59-AB3E-1C03A3D1E13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C1D1A5-1F80-4CE3-BF7F-F96027046665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C1D1A5-1F80-4CE3-BF7F-F96027046665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C1D1A5-1F80-4CE3-BF7F-F96027046665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C1D1A5-1F80-4CE3-BF7F-F96027046665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

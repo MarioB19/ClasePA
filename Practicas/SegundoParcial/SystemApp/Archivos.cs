@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 using PA17F.Shared;
 using static System.Environment;
 using static System.IO.Path;
+using static System.IO.Directory;
 using Microsoft.VisualBasic;
 using System.Security.Cryptography;
 using static System.Console;
@@ -18,28 +19,24 @@ using System.Dynamic;
 public partial class Program{
 
 
+
     public static List<Almacenista> almacenistas = new List<Almacenista>();
     public static List<Profesor> profesores = new List<Profesor>();
     static List<Salon> salones = new List<Salon>();
 
+    public static XmlSerializer xsAlmacenistas = new XmlSerializer(typeof(List<Almacenista>));
+    public static string pathAlmacenistas = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "almacenistas.xml");
 
-    public static XmlSerializer xsAlmacenistas = new(type: almacenistas.GetType());
-    public static string pathAlmacenistas = Combine(CurrentDirectory, "almacenistas.xml");
+    public static XmlSerializer xsProfesores = new XmlSerializer(typeof(List<Profesor>));
+    public static string pathProfesores = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "profesores.xml");
 
-    public static XmlSerializer xsProfesores = new(type: profesores.GetType());
-    public static string pathProfesores = Combine(CurrentDirectory, "profesores.xml");
+    public static XmlSerializer xsSalones = new XmlSerializer(typeof(List<Salon>));
+    public static string pathSalones = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "salones.xml");
 
-    public static XmlSerializer xsSalones = new(type: salones.GetType());
-    public static string pathSalones = Combine(CurrentDirectory, "salones.xml");
+    public static string jsonAlmacenistas = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "almacenistas.json");
+    public static string jsonProfes = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "profesores.json");
+    public static string jsonSalones = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "salones.json");
 
-
-
-
-    public static string jsonAlmacenistas = Combine(CurrentDirectory, "almacenistas.json");
-
-    public static string jsonProfes = Combine(CurrentDirectory, "profesores.json");
-
-    public static string jsonSalones = Combine(CurrentDirectory, "salones.json");
 
     public static void SerializarXMLAlmacenistas(){
         using (FileStream stream = File.Create(pathAlmacenistas))

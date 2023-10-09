@@ -3,9 +3,7 @@ C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.AssemblyInfoInputs.cache
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.AssemblyInfo.cs
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.csproj.CoreCompileInputs.cache
-C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.exe
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.deps.json
-C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.runtimeconfig.json
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.dll
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.pdb
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\Libraries.dll
@@ -14,6 +12,8 @@ C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.dll
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\refint\SystemApp.dll
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.pdb
-C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.genruntimeconfig.cache
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\ref\SystemApp.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.exe
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\SystemApp.runtimeconfig.json
 C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\SystemApp\obj\Debug\net7.0\SystemApp.genruntimeconfig.cache

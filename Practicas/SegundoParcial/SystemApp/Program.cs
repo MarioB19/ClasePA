@@ -17,7 +17,7 @@ using System.Runtime.CompilerServices;
 public partial class Program
 {
 
-    static void Main()
+    public static void Main()
     {
 
         // Carga inicial de almacenistas
@@ -71,23 +71,281 @@ public partial class Program
 
     }
 
-    static void CrearAlmacenistas()
+    public static bool validarBorrarProfesor(string Nomina)
     {
-        almacenistas.Clear();
+
+         profesores.Clear();
+        salones.Clear();
 
 
-        DeserializarXMLAlmacenistas();
+        DeserializarXMLProfesores();
+        DeserializarXMLSalones();
+
+      
+        Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == CalcularHash(Nomina));
+
+        if (profesor != null)
+        {
+            profesores.Remove(profesor);
+            WriteLine("Profesor eliminado correctamente.");
+
+            foreach (var item in salones)
+            {
+
+                if (item.ProfesoresAsignados.Contains(profesor.Nomina))
+                {
+                    item.ProfesoresAsignados.Remove(profesor.Nomina);
+                }
+
+            }
+
+
+
+            SerializarXMLProfesores();
+            SerializarXMLSalones();
+
+            SerializarJsonSalones();
+            SerializarJsonProfesores();
+
+
+
+            return true;
+
+            
+
+        }
+        else
+        {
+          return false;
+        }
+        
     }
-    static void CrearSalones()
+
+
+    public static string [] VerificarCambiarMaterias(string [] Materias ,string materiaCambio, string materiaNueva)
+    {
+           for (int j = 0; j < Materias.Length; j++)
+        {
+            if (Materias[j] == materiaCambio)
+            {
+                Materias[j] = materiaNueva;
+            }
+        }
+
+
+        List<string> Materia = new List<string>();
+
+        foreach (var item in Materias)
+        {
+            Materia.Add(item);
+        }
+
+     
+
+        Materia.Sort();
+
+        int i = 0;
+
+        foreach (var item in Materia)
+        {
+
+            Materias[i] = item;
+            i++;
+        }
+
+        
+
+        return Materias;
+
+    }
+    
+
+    public static void InicializarAlmacenista()
+    {
+        DeserializarXMLAlmacenistas();
+
+        if (almacenistas.Count == 0)
+        {
+
+            almacenistas.Clear();
+
+
+            almacenistas.Add(new Almacenista { NombreCompleto = "Admin", Contrasenia = CalcularHash("default") });
+            almacenistas.Add(new Almacenista { NombreCompleto = "Anel", Contrasenia = CalcularHash("1") });
+            almacenistas.Add(new Almacenista { NombreCompleto = "Mario", Contrasenia = CalcularHash("default") });
+
+            SerializarXMLAlmacenistas();
+            SerializarJsonAlmacenistas();
+
+
+
+        }
+
+    }
+
+    public static void InicializarSalones()
     {
 
         salones.Clear();
+        DeserializarXMLSalones();
+
+        if (salones.Count == 0)
+        {
+
+            salones.Clear();
+
+            salones.Add(new Salon { Nombre = "F-201" });
+            salones.Add(new Salon { Nombre = "F-202" });
+            salones.Add(new Salon { Nombre = "F-203" });
+            salones.Add(new Salon { Nombre = "F-204" });
+            salones.Add(new Salon { Nombre = "ELEC-A" });
+            salones.Add(new Salon { Nombre = "ELEC-B" });
+            salones.Add(new Salon { Nombre = "ELEC-C" });
+            salones.Add(new Salon { Nombre = "LABC-A" });
+            salones.Add(new Salon { Nombre = "LABC-B" });
+            salones.Add(new Salon { Nombre = "LABC-C" });
+
+            SerializarXMLSalones();
+            SerializarJsonSalones();
+
+        }
+
+    }
+
+    public static bool ValidarInicioSesionAlmacenista(string nombreCompleto, string Contrasenia)
+    {
+        almacenistas.Clear();
+        DeserializarXMLAlmacenistas();
+
+        Contrasenia = CalcularHash(Contrasenia);
+
+        Almacenista? almacenista = almacenistas.FirstOrDefault(a => a.NombreCompleto == nombreCompleto && a.Contrasenia == Contrasenia);
+
+        if (almacenista != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    public static void CambiarContraseniaAlmacenista(string nombreCompleto, string Contrasenia)
+    {
+
+        almacenistas.Clear();
+        DeserializarXMLAlmacenistas();
+
+
+
+        Almacenista? almacenista = almacenistas.FirstOrDefault(a => a.NombreCompleto == nombreCompleto);
+
+        if (almacenista != null)
+        {
+            almacenista.Contrasenia = CalcularHash(Contrasenia);
+        }
+
+        SerializarXMLAlmacenistas();
+        SerializarJsonAlmacenistas();
+
+
+    }
+
+    public static void CambiarContraseniaProfesor(string nomina, string Contrasenia)
+    {
+
+        profesores.Clear();
+        DeserializarXMLProfesores();
+
+        string nominaHash = CalcularHash(nomina);
+
+        Profesor? profesor = profesores.FirstOrDefault(profesor => profesor.Nomina == nominaHash);
+
+        if (profesor != null)
+        {
+            profesor.Contrasenia = CalcularHash(Contrasenia);
+        }
+
+        SerializarXMLProfesores();
+        SerializarJsonProfesores();
+
+
+    }
+
+
+
+    public static bool ValidarCambioContrasenaProfesor(string nomina, string Contrasenia)
+    {
+        profesores.Clear();
+        DeserializarXMLProfesores();
+
+    
+
+        Profesor? profesor = profesores.FirstOrDefault(profesor => profesor.Nomina == CalcularHash(nomina) && profesor.Contrasenia == CalcularHash(Contrasenia));
+
+        if (profesor != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+
+    public static string[] ValidarOrganizarMaterias(string[] Materias)
+    {
+
+
+        List<string> Materia = new List<string>();
+
+        foreach (var item in Materias)
+        {
+            Materia.Add(item);
+        }
+
+        Materia.Sort();
+        int i = 0;
+
+        foreach (var item in Materia)
+        {
+
+            Materias[i] = item;
+            i++;
+        }
+
+        return Materias;
+
+    }
+
+
+
+
+
+
+
+    public static void CrearAlmacenistas()
+    {
+        InicializarAlmacenista();
+    }
+    public static int CrearSalones()
+    {
+        InicializarSalones();
+
+        salones.Clear();
+
 
         DeserializarXMLSalones();
         SerializarXMLSalones();
+
+        return salones.Count;
     }
 
-    static bool IniciarSesionAlmacenista()
+    public static bool IniciarSesionAlmacenista()
     {
         WriteLine("LOGIN ALMACENISTA");
         Write("Ingrese su Nombre Completo: ");
@@ -98,7 +356,7 @@ public partial class Program
         return almacenistas.Any(a => a.NombreCompleto == nombreCompleto && a.Contrasenia == Contrasenia);
     }
 
-    static void AgregarProfesor()
+    public static void AgregarProfesor()
     {
         int cont = 0;
         profesores.Clear();
@@ -107,11 +365,23 @@ public partial class Program
         DeserializarXMLSalones();
 
         Profesor nuevoProfesor = new Profesor();
+        Write("Nomina del Profesor: ");
+        string Nomina = ReadLine();
+
+        if (!VerificarNominaNoRepetida(Nomina))
+        {
+
+            WriteLine("Nomina ya existe");
+            return;
+        }
+
+
+        nuevoProfesor.Nomina = CalcularHash(Nomina);
 
         Write("Nombre Completo del Profesor: ");
         nuevoProfesor.NombreCompleto = ReadLine();
-        Write("Nomina del Profesor: ");
-        nuevoProfesor.Nomina = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Nomina.
+
+
         Write("Contrasenia  del Profesor: ");
         nuevoProfesor.Contrasenia = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Contrasenia .
         do
@@ -218,7 +488,7 @@ public partial class Program
             salon.ProfesoresAsignados.Add(nuevoProfesor.Nomina);
         }
 
-       nuevoProfesor.Materias.Sort();
+        nuevoProfesor.Materias.Sort();
 
         profesores.Add(nuevoProfesor);
         SerializarXMLProfesores();
@@ -230,7 +500,30 @@ public partial class Program
         WriteLine("Profesor agregado correctamente.");
     }
 
-    static void EditarProfesor()
+    public static bool VerificarNominaNoRepetida(string Nomina)
+    {
+
+        Nomina = CalcularHash(Nomina);
+
+        profesores.Clear();
+        DeserializarXMLProfesores();
+
+        Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == Nomina);
+
+        if (profesor != null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+    }
+
+
+
+    public static void EditarProfesor()
     {
 
         int cont = 0;
@@ -269,8 +562,19 @@ public partial class Program
                     profesor.NombreCompleto = ReadLine();
                     break;
                 case 2:
-                    Write("Nueva Nomina: ");
-                    profesor.Nomina = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Nomina.
+
+                    Write("Nueva nomina del Profesor: ");
+                    Nomina = ReadLine();
+
+                    if (!VerificarNominaNoRepetida(Nomina))
+                    {
+
+                        WriteLine("Nomina ya existe");
+                        return;
+                    }
+                    profesor.Nomina = Nomina;
+
+
                     break;
                 case 3:
                     Write("Nueva Contrasenia : ");
@@ -534,7 +838,7 @@ public partial class Program
                     WriteLine("Opción no válida.");
                     break;
             }
-            
+
 
 
             SerializarXMLProfesores();
@@ -550,7 +854,7 @@ public partial class Program
 
     }
 
-    static void EliminarProfesor()
+    public static void EliminarProfesor()
     {
 
         profesores.Clear();
@@ -596,7 +900,7 @@ public partial class Program
         }
     }
 
-    static void CambiarContrasenia()
+    public static void CambiarContrasenia()
     {
 
         int opcion;
@@ -613,7 +917,7 @@ public partial class Program
             WriteLine("2: Almacenista");
             WriteLine("3: Salir");
 
-            string ?input = ReadLine();
+            string? input = ReadLine();
 
             if (int.TryParse(input, out opcion) && opcion >= 1 && opcion <= 3)
             {
@@ -642,7 +946,7 @@ public partial class Program
 
     }
 
-    static void GenerarReportes()
+    public static void GenerarReportes()
     {
         WriteLine("Campos de organización:");
         WriteLine("1. Nombre Completo");
@@ -673,30 +977,34 @@ public partial class Program
             case 5:
                 GenerarReporte("Division");
                 break;
-        
+
             default:
                 WriteLine("Opción no válida.");
                 break;
         }
     }
 
-    static void GenerarReporte(string campoOrganizacion)
+    public static void GenerarReporte(string campoOrganizacion)
     {
         profesores.Clear();
         DeserializarXMLProfesores();
-        
 
         OrdenarProfesores(campoOrganizacion);
-        string directorio = "Reportes";
-        
-        // Crear la carpeta si no existe
-        Directory.CreateDirectory(directorio);
 
-        // Rutas de los archivos dentro de la carpeta
-        string jsonNombreArchivo = Path.Combine(directorio, $"Reporte_{campoOrganizacion}.json");
-        string xmlNombreArchivo = Path.Combine(directorio, $"Reporte_{campoOrganizacion}.xml");
+        // Obtener la ruta al directorio MyDocuments
+        string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
+        // Crear la carpeta Archivos si no existe
+        string archivosDirectory = Path.Combine(myDocumentsPath, "Archivos");
+        Directory.CreateDirectory(archivosDirectory);
 
+        // Crear la carpeta Reportes dentro de Archivos si no existe
+        string reportesDirectory = Path.Combine(archivosDirectory, "Reportes");
+        Directory.CreateDirectory(reportesDirectory);
+
+        // Rutas de los archivos dentro de la carpeta Reportes
+        string jsonNombreArchivo = Path.Combine(reportesDirectory, $"Reporte_{campoOrganizacion}.json");
+        string xmlNombreArchivo = Path.Combine(reportesDirectory, $"Reporte_{campoOrganizacion}.xml");
 
         var profesoresOrdenados = new List<Profesor>(profesores);
 
@@ -714,7 +1022,9 @@ public partial class Program
         WriteLine($"Reporte XML generado: {xmlNombreArchivo}");
     }
 
-    static void OrdenarProfesores(string campoOrganizacion)
+
+
+    public static void OrdenarProfesores(string campoOrganizacion)
     {
         switch (campoOrganizacion)
         {
@@ -728,7 +1038,7 @@ public partial class Program
                 profesores.Sort((p1, p2) => p1.Contrasenia.CompareTo(p2.Contrasenia));
                 break;
             case "Materias":
-                  profesores.Sort((p1, p2) => p1.Materias[0].CompareTo(p2.Materias[0]));
+                profesores.Sort((p1, p2) => p1.Materias[0].CompareTo(p2.Materias[0]));
                 break;
             case "Division":
                 profesores.Sort((p1, p2) => p1.Division.CompareTo(p2.Division));
@@ -738,8 +1048,11 @@ public partial class Program
 
 
 
+
+
+
     // Función para calcular el hash de una cadena usando SHA256
-    static string CalcularHash(string input)
+    public static string CalcularHash(string input)
     {
         using (SHA256 sha256Hash = SHA256.Create())
         {
@@ -754,4 +1067,49 @@ public partial class Program
         }
     }
 
+    public static bool ValidarArchivos()
+    {
+
+        // Directorio base
+        string directorioBase = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos");
+
+        // Nombres de archivos
+        string archivoXmlAlmacenistas = "almacenistas.xml";
+        string archivoJsonAlmacenistas = "almacenistas.json";
+
+        string archivoXmlProfesores = "profesores.xml";
+        string archivoJsonProfesores = "profesores.json";
+
+        string archivoXmlSalones = "salones.xml";
+        string archivoJsonSalones = "salones.json";
+
+        // Rutas completas de los archivos
+        string rutaXmlAlmacenistas = Path.Combine(directorioBase, archivoXmlAlmacenistas);
+        string rutaJsonAlmacenistas = Path.Combine(directorioBase, archivoJsonAlmacenistas);
+
+        string rutaXmlProfesores = Path.Combine(directorioBase, archivoXmlProfesores);
+        string rutaJsonProfesores = Path.Combine(directorioBase, archivoJsonProfesores);
+
+        string rutaXmlSalones = Path.Combine(directorioBase, archivoXmlSalones);
+        string rutaJsonSalones = Path.Combine(directorioBase, archivoJsonSalones);
+
+
+        // Verificar si existen los archivos XML
+        if (File.Exists(rutaXmlAlmacenistas) && File.Exists(rutaXmlProfesores) && File.Exists(rutaXmlSalones)
+        && File.Exists(rutaJsonAlmacenistas) && File.Exists(rutaJsonProfesores) && File.Exists(rutaJsonSalones))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+
+    }
+
+
+
 }
+
+

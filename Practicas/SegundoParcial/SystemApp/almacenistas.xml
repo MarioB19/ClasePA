@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfAlmacenista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Almacenista>
-    <NombreCompleto>Mario</NombreCompleto>
-    <Contrasenia>6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b</Contrasenia>
-  </Almacenista>
-</ArrayOfAlmacenista>
