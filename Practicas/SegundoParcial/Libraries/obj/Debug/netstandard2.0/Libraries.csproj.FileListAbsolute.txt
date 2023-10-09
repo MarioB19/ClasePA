@@ -1,0 +1,10 @@
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\bin\Debug\netstandard2.0\Libraries.deps.json
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\bin\Debug\netstandard2.0\Libraries.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\bin\Debug\netstandard2.0\Libraries.pdb
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.csproj.AssemblyReference.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.dll
+C:\Users\brand\Desktop\Clase C#\Practicas\SegundoParcial\Libraries\obj\Debug\netstandard2.0\Libraries.pdb

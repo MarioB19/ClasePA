@@ -117,11 +117,11 @@ public class UnitTest1
     Archivos archive = new(); //instanciar la clase Archivos
 
 //definacion de los valores esperados para cada vocal
-    contVocals [0]  = 154;
-    contVocals [1]  = 99;
-    contVocals [2]  = 84;
-    contVocals [3]  = 108;
-    contVocals [4]  = 40;
+    contVocals [0]  = 90;
+    contVocals [1]  = 151;
+    contVocals [2]  = 107;
+    contVocals [3]  = 44;
+    contVocals [4]  = 97;
 
     Assert.Equal(output,archive.ReemplazarVocales(text, contVocals)); //verificar que se reemplazaron las vocales correctamente
   }

@@ -1,9 +1,19 @@
 ﻿namespace PA17F.Shared;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Dynamic;
+using System.Xml.Serialization;
+
+
+
+ //[xml atribbute]
 
 public class Person
 {
+
+  public Person(decimal initialSalary){
+    Salary = initialSalary;
+  }
 
 #region Apuntes
     /*
@@ -43,9 +53,28 @@ public class Person
 
 #endregion
 
+public Person()
+{
+}
+//members
+[XmlAttribute("fname")]
+public string? Name { get; set; }
+[XmlAttribute("lname")]
+public string? LastName { get; set; }
 
-public string? Name;
+[XmlAttribute("cumple")]
 public DateTime DateOfBirth;
+
+
+protected decimal Salary { get; set; }
+
+public HashSet<Person> ? Children{ get; set; }
+
+
+
+
+
+
 
 
 //Delegates
@@ -56,18 +85,20 @@ public int MethodWantToCall(string input)
 
 }
 
-public delegate int DelegateWithMatchSignature (string s);
+//public delegate int DelegateWithMatchSignature (string s);
 
 
 //1st Step , Event Handler
-public delegate void EventHandler(object? sender, EventArgs e);
+//public delegate void EventHandler(object? sender, EventArgs e);
 
 
 //delegate field
-private  EventHandler? Shout;
+//private  EventHandler? Shout;
 
 //Date field for delegate
 
+
+/*
 public int AngerLevel;
 
 public void Poke(){
@@ -86,6 +117,8 @@ public void Poke(){
     }
   AngerLevel++;
 }
+
+*/
 
 
 

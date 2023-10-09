@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\PeopleApp.csproj",
+      "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\PeopleApp.csproj",
       "projectName": "PeopleApp",
-      "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\PeopleApp.csproj",
+      "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\PeopleApp.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\obj\\",
+      "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Segundo  Parcial\\OOP\\PeopleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

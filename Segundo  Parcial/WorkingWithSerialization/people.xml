@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person cumple="1999-10-25T00:00:00" fname="Isaac" lname="Chavez" />
+  <Person cumple="1999-11-25T00:00:00" fname="Carolina" lname="Prian" />
+  <Person cumple="1999-12-25T00:00:00" fname="Mario" lname="Muro" />
+  <Person cumple="2001-04-12T00:00:00" fname="Juan" lname="Torres">
+    <Children>
+      <Person cumple="2023-10-02T00:00:00" fname="Juanito" lname="Torres" />
+      <Person cumple="2023-10-02T00:00:00" fname="Juanita" lname="Torres" />
+    </Children>
+  </Person>
+</ArrayOfPerson>

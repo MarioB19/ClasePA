@@ -4,7 +4,7 @@ using System.Formats.Asn1;
 using PA17F.Shared;
 using static PA17F.Shared.Person;
 
-Person wachi = new();
+Person wachi = new(300);
 
 
 
@@ -42,18 +42,20 @@ foreach (var key in lookUpIntString.Keys)
 
 
 #region  manera Convencional de llamar a un metodo
-Person Jordi = new();
+Person Jordi = new(200);
 int answer = Jordi.MethodWantToCall("Alfred");
 
 #endregion
 
 
-
+/*
 
 #region manera facil para usar delegado
 //Usando delegado para llamar a metodo
 //Creando una instancia
 //nombre del delegado , instancia del delegado = new (nombre del metodo que quiero llamar)
+
+
 
 DelegateWithMatchSignature d = new(Jordi.MethodWantToCall);
 int answer2 = d("Alfred");
@@ -62,9 +64,11 @@ int answer2 = d("Alfred");
 
 
 
- Jordi.Shout = Jordi_Shout;
+
     Jordi.Poke();
     Jordi.Poke();
     Jordi.Poke();
+
+    */
 
 

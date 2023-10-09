@@ -84,7 +84,7 @@ public  bool IsPalindromo(string cadena) //funcion para verificar si una string 
 public string LongestPalindromo(string text) //funcion para encontrar el palindromo mas largo en una string
 {
     string auxText = text.ToLower(); //pasar la string a minusculas
-    string[] wordsWithNumbers = auxText.Split(new[] { ' ', '\n', '\r', }, StringSplitOptions.RemoveEmptyEntries); //pasar la string a un array de strings, separando por espacios, saltos de linea y /r
+    string[] wordsWithNumbers = auxText.Split(new[] { ' ', '\n', '\r', ',' }, StringSplitOptions.RemoveEmptyEntries); //pasar la string a un array de strings, separando por espacios, saltos de linea y /r
 
     string longestPalindrome = ""; //variable para el palindromo mas largo
 
@@ -129,7 +129,7 @@ public int [] ContarVocales(string text, int[] contVocals) //funcion para contar
 
 {
 
-    string[] words = text.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries); //pasar la string text a un array de strings, separando por espacios, saltos de linea y /r
+    string[] words = text.Split(new[] { ' ', '\n', '\r' ,',' }, StringSplitOptions.RemoveEmptyEntries); //pasar la string text a un array de strings, separando por espacios, saltos de linea y /r
 
     foreach (string word in words) //recorrer el array de strings
     {
