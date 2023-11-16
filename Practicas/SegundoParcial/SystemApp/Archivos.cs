@@ -1,4 +1,4 @@
-
+//directivas necesarias
 using System.Collections.Generic;
 using System;
 using System.Security.AccessControl;
@@ -18,26 +18,31 @@ using System.Dynamic;
 
 public partial class Program{
 
-
+//listas de almacenistas, profesores y salones
 
     public static List<Almacenista> almacenistas = new List<Almacenista>();
     public static List<Profesor> profesores = new List<Profesor>();
     static List<Salon> salones = new List<Salon>();
 
+//path y creacion de objeto xml para almacenistas
     public static XmlSerializer xsAlmacenistas = new XmlSerializer(typeof(List<Almacenista>));
     public static string pathAlmacenistas = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "almacenistas.xml");
 
+//path y creacion de objeto xml para profesores
     public static XmlSerializer xsProfesores = new XmlSerializer(typeof(List<Profesor>));
     public static string pathProfesores = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "profesores.xml");
 
+//path y creacion de objeto xml para salones
     public static XmlSerializer xsSalones = new XmlSerializer(typeof(List<Salon>));
     public static string pathSalones = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "salones.xml");
 
+
+//path de almacenistas json , profesores json y salones json
     public static string jsonAlmacenistas = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "almacenistas.json");
     public static string jsonProfes = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "profesores.json");
     public static string jsonSalones = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Archivos", "salones.json");
 
-
+#region Serializar Deserializar Entidades (Json y XML)
     public static void SerializarXMLAlmacenistas(){
         using (FileStream stream = File.Create(pathAlmacenistas))
         {
@@ -150,22 +155,29 @@ public partial class Program{
 
     }
 
+
+    #endregion
+
+
+//Funcion cambiar contrasena almacenista
     public static void CambiarContraseniaAlmacenista(){
 
         Write("Ingrese su Nombre Completo: ");
         string ?nombreCompleto = ReadLine();
+
         
+        //Verificar si hay un almecenista con ese nombre
         Almacenista? almacenista = almacenistas.FirstOrDefault(a => a.NombreCompleto == nombreCompleto);
 
         if (almacenista != null){
-
+        //si hay un almacenista con ese nombre, pedir la nueva contrasenia
         Write("Ingrese la nueva Contrasenia : ");
         string nuevaContrasenia = CalcularHash(ReadLine());
 
         
             almacenista.Contrasenia = nuevaContrasenia;
 
-
+            //gurdar cambios serializando xml y json
             SerializarXMLAlmacenistas();
             SerializarJsonAlmacenistas();
 
@@ -178,15 +190,20 @@ public partial class Program{
 
     }
 
+
+//Funcion cambiar contrasenia profesor
     public static void CambiarContraseniaProfesor(){
 
           Write("Ingrese su nomina: ");
         string ?nomina = CalcularHash(ReadLine());
 
+
+//Verificar si hay un profesor con esa nomina
            Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == nomina);
 
             if (profesor != null)
             {
+                //Si existe un profesor con esa nomina, pedir la nueva contrasenia
                    Write("Ingrese la nueva Contrasenia : ");
         string nuevaContrasenia = CalcularHash(ReadLine());
 

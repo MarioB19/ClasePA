@@ -1,0 +1,14 @@
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\bin\Debug\net7.0\FrecuencyPerElement.exe
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\bin\Debug\net7.0\FrecuencyPerElement.deps.json
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\bin\Debug\net7.0\FrecuencyPerElement.runtimeconfig.json
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\bin\Debug\net7.0\FrecuencyPerElement.dll
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\bin\Debug\net7.0\FrecuencyPerElement.pdb
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.AssemblyInfoInputs.cache
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.AssemblyInfo.cs
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.dll
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\refint\FrecuencyPerElement.dll
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.pdb
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\FrecuencyPerElement.genruntimeconfig.cache
+C:\Users\brand\Desktop\Clase C#\FrecuencyPerElement\obj\Debug\net7.0\ref\FrecuencyPerElement.dll

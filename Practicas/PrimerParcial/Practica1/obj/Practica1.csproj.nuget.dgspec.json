@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj": {}
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj": {
+    "C:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj",
         "projectName": "Practica1",
-        "projectPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj",
+        "projectPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\Practica1.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\obj\\",
+        "outputPath": "C:\\Users\\brand\\Desktop\\Clase C#\\Practicas\\PrimerParcial\\Practica1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

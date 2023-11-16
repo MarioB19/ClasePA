@@ -26,8 +26,6 @@
 
     <ItemGroup>
       <ProjectReference Include="../SystemApp/SystemApp.csproj" />
-
-
   
   </ItemGroup>
 

@@ -1,0 +1,39 @@
+@page
+@model NorthwindWeb.Pages.CategoriesModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!--Definicion de la tabla para listar las categories, y mostrar accion eliminar -->
+    <h1 class="display-2">CRD Categories</h1>
+
+    <a asp-page="/CategoryAdd" class="btn btn-primary">Agregar Categoría</a>
+
+
+    <table class="table table-hover table-dark">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Category ID</th>
+                <th>Category Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td>@category.CategoryId</td>
+                    <td>@category.CategoryName</td>
+                    <td>@category.Description</td>
+                    <td>
+                        <form method="post" asp-page-handler="Delete" asp-route-id="@category.CategoryId">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

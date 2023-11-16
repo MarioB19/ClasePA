@@ -4,10 +4,16 @@ namespace PA17F.Shared;
     {
         private static int contador = 0;
 
+
+        //Constructor salon
+
         public Salon()
         {
             Identificador = ++contador;
         }
+
+
+        //Atributos salon
 
         public int Identificador { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿//Directivas necesarias
+using System.Collections.Generic;
 using System;
 using System.Security.AccessControl;
 using System.Xml.Serialization;
@@ -23,6 +24,8 @@ public partial class Program
         // Carga inicial de almacenistas
         CrearAlmacenistas();
         CrearSalones();
+
+        //Menu de opciones
         while (IniciarSesionAlmacenista())
         {
 
@@ -74,18 +77,25 @@ public partial class Program
     public static bool validarBorrarProfesor(string Nomina)
     {
 
+        //limpiar listas de profesores y salones
+
          profesores.Clear();
         salones.Clear();
 
 
+
+//cargar en listas lo que hay en los archivos profesores y salones
         DeserializarXMLProfesores();
         DeserializarXMLSalones();
 
-      
+      //Verificar si hay un profesor con esa nomina
         Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == CalcularHash(Nomina));
 
         if (profesor != null)
         {
+
+            //Si existe el profesor, borrarlo de la lista de profesores
+        //ademas de cualquier relacion con el salon
             profesores.Remove(profesor);
             WriteLine("Profesor eliminado correctamente.");
 
@@ -100,7 +110,7 @@ public partial class Program
             }
 
 
-
+//Guardamos los cambios en salones y profesores
             SerializarXMLProfesores();
             SerializarXMLSalones();
 
@@ -122,6 +132,8 @@ public partial class Program
     }
 
 
+
+//Funcion para verificar que el cambio de materias dada una cadena , y un elemento a cambiar si se hace correctamente
     public static string [] VerificarCambiarMaterias(string [] Materias ,string materiaCambio, string materiaNueva)
     {
            for (int j = 0; j < Materias.Length; j++)
@@ -160,9 +172,15 @@ public partial class Program
     }
     
 
+
+//Funcion inicializar almacenista
     public static void InicializarAlmacenista()
     {
+
+        //Obtener almacenistas de los archivos
         DeserializarXMLAlmacenistas();
+
+        //Si no hay ninguna almacenistas, instanciar 3 almacenistas
 
         if (almacenistas.Count == 0)
         {
@@ -173,6 +191,10 @@ public partial class Program
             almacenistas.Add(new Almacenista { NombreCompleto = "Admin", Contrasenia = CalcularHash("default") });
             almacenistas.Add(new Almacenista { NombreCompleto = "Anel", Contrasenia = CalcularHash("1") });
             almacenistas.Add(new Almacenista { NombreCompleto = "Mario", Contrasenia = CalcularHash("default") });
+
+            //Guardar cambios serializando
+
+
 
             SerializarXMLAlmacenistas();
             SerializarJsonAlmacenistas();
@@ -186,8 +208,14 @@ public partial class Program
     public static void InicializarSalones()
     {
 
+        //limpiar lista salones
+
         salones.Clear();
+
+        //Obtener salones de los archivos
         DeserializarXMLSalones();
+
+        //Si no hay ningun salon, instanciar 10 salones
 
         if (salones.Count == 0)
         {
@@ -205,6 +233,9 @@ public partial class Program
             salones.Add(new Salon { Nombre = "LABC-B" });
             salones.Add(new Salon { Nombre = "LABC-C" });
 
+            //Guardar cambios serializando
+
+
             SerializarXMLSalones();
             SerializarJsonSalones();
 
@@ -214,10 +245,16 @@ public partial class Program
 
     public static bool ValidarInicioSesionAlmacenista(string nombreCompleto, string Contrasenia)
     {
+        //limpiar lista almacenistas
         almacenistas.Clear();
+
+        //obtener almacenistas
         DeserializarXMLAlmacenistas();
 
+
         Contrasenia = CalcularHash(Contrasenia);
+
+        //si hay un almacenistas con esas credenciales, regresar true, si no false
 
         Almacenista? almacenista = almacenistas.FirstOrDefault(a => a.NombreCompleto == nombreCompleto && a.Contrasenia == Contrasenia);
 
@@ -235,11 +272,14 @@ public partial class Program
     public static void CambiarContraseniaAlmacenista(string nombreCompleto, string Contrasenia)
     {
 
+//limpiar lista almacenistas
         almacenistas.Clear();
+
+//obtener almacenistas
         DeserializarXMLAlmacenistas();
 
 
-
+//Verificar si hay un almacenista con ese nombre, y si lo hay cambiar su contrasena
         Almacenista? almacenista = almacenistas.FirstOrDefault(a => a.NombreCompleto == nombreCompleto);
 
         if (almacenista != null)
@@ -247,6 +287,7 @@ public partial class Program
             almacenista.Contrasenia = CalcularHash(Contrasenia);
         }
 
+        //Guardar cambios
         SerializarXMLAlmacenistas();
         SerializarJsonAlmacenistas();
 
@@ -255,11 +296,14 @@ public partial class Program
 
     public static void CambiarContraseniaProfesor(string nomina, string Contrasenia)
     {
-
+//borrar lista profesores
         profesores.Clear();
+//obtener los profesores que hay en los archivos
         DeserializarXMLProfesores();
 
         string nominaHash = CalcularHash(nomina);
+
+    //si existe un profesor con esa nomina, cambiar su contrasena
 
         Profesor? profesor = profesores.FirstOrDefault(profesor => profesor.Nomina == nominaHash);
 
@@ -267,6 +311,8 @@ public partial class Program
         {
             profesor.Contrasenia = CalcularHash(Contrasenia);
         }
+
+        //guardar cambios
 
         SerializarXMLProfesores();
         SerializarJsonProfesores();
@@ -278,9 +324,15 @@ public partial class Program
 
     public static bool ValidarCambioContrasenaProfesor(string nomina, string Contrasenia)
     {
+
+        //limpiar profesores
         profesores.Clear();
+
+        //obtener profesores de los archivos
         DeserializarXMLProfesores();
 
+
+//verificar si las nuevas credenciales son correctas , si lo son regresar true, si no false
     
 
         Profesor? profesor = profesores.FirstOrDefault(profesor => profesor.Nomina == CalcularHash(nomina) && profesor.Contrasenia == CalcularHash(Contrasenia));
@@ -297,19 +349,28 @@ public partial class Program
     }
 
 
+
+//Funcion validar organizaer materias
     public static string[] ValidarOrganizarMaterias(string[] Materias)
     {
 
 
+
         List<string> Materia = new List<string>();
 
+
+//Agregar materias a una list
         foreach (var item in Materias)
         {
             Materia.Add(item);
         }
 
+        //organizar las materias
+
         Materia.Sort();
         int i = 0;
+
+        //guardar los elementos de la lista en el arreglo
 
         foreach (var item in Materia)
         {
@@ -318,7 +379,7 @@ public partial class Program
             i++;
         }
 
-        return Materias;
+        return Materias; //retornar las materias organizadas
 
     }
 
@@ -330,21 +391,29 @@ public partial class Program
 
     public static void CrearAlmacenistas()
     {
+        //Funcion inicializar almacenista, para que en caso de que no haya ninguno se creen 3
         InicializarAlmacenista();
     }
     public static int CrearSalones()
     {
+
+        //Funcion inicializar salones en caso de ser necesario
         InicializarSalones();
 
+//Limpiar salones
         salones.Clear();
 
-
+//Guardar los salones que en los archivos
         DeserializarXMLSalones();
         SerializarXMLSalones();
+
+        //retornar cantidad de solones creados
 
         return salones.Count;
     }
 
+
+//Funcion iniciar sesion almacenistas
     public static bool IniciarSesionAlmacenista()
     {
         WriteLine("LOGIN ALMACENISTA");
@@ -353,21 +422,30 @@ public partial class Program
         Write("Ingrese su Contrasenia : ");
         string Contrasenia = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Contrasenia  y compararla con la almacenada.
 
+//Verificar si hay un almacenistas con esas credenciales
         return almacenistas.Any(a => a.NombreCompleto == nombreCompleto && a.Contrasenia == Contrasenia);
     }
 
+
+//Funcion agregar profesores
     public static void AgregarProfesor()
     {
         int cont = 0;
+        //limpiar lista profesores y salones
         profesores.Clear();
         salones.Clear();
+
+        //obtener salones y profes de los archivos
         DeserializarXMLProfesores();
         DeserializarXMLSalones();
 
+        //creacion del objeto Profesor donde se gurdaran todos los datos
         Profesor nuevoProfesor = new Profesor();
         Write("Nomina del Profesor: ");
         string Nomina = ReadLine();
 
+
+//Verificiar que la nomina ingresa no este repetida
         if (!VerificarNominaNoRepetida(Nomina))
         {
 
@@ -376,7 +454,11 @@ public partial class Program
         }
 
 
+//Captura de los demas datos
+
         nuevoProfesor.Nomina = CalcularHash(Nomina);
+
+
 
         Write("Nombre Completo del Profesor: ");
         nuevoProfesor.NombreCompleto = ReadLine();
@@ -488,9 +570,14 @@ public partial class Program
             salon.ProfesoresAsignados.Add(nuevoProfesor.Nomina);
         }
 
+//ordenar de la A-Z las materias ingresadas
         nuevoProfesor.Materias.Sort();
 
+
+//Agregando profesor a la lista profesores
         profesores.Add(nuevoProfesor);
+
+//Serializando profesores y salones
         SerializarXMLProfesores();
         SerializarXMLSalones();
 
@@ -503,10 +590,16 @@ public partial class Program
     public static bool VerificarNominaNoRepetida(string Nomina)
     {
 
-        Nomina = CalcularHash(Nomina);
+        //encriptar nomina
 
+        Nomina = CalcularHash(Nomina);
+//borrar lista de profesores
         profesores.Clear();
+
+//obtener profesores en los archivos
         DeserializarXMLProfesores();
+
+//verificar si hay un profesor con esa nomina, si lo hay regresar false, si no true
 
         Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == Nomina);
 
@@ -528,20 +621,29 @@ public partial class Program
 
         int cont = 0;
 
+        //limpiar lista profesores y salones
+
         profesores.Clear();
         salones.Clear();
+
+        //obtener profesores y salones de los archivos
 
         DeserializarXMLProfesores();
 
         DeserializarXMLSalones();
 
 
+
+
         Write("Ingrese la Nomina del profe a buscar: ");
 
         string Nomina = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Contrasenia  y compararla con la almacenada.
 
+//buscar si hay un profe con esa nomina
         Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == Nomina);
 
+
+//Menu de campos a editar
         if (profesor != null)
         {
             WriteLine("Seleccione el atributo a editar:");
@@ -841,6 +943,8 @@ public partial class Program
 
 
 
+//Guardando cambios serializando
+
             SerializarXMLProfesores();
             SerializarXMLSalones();
             SerializarJsonSalones();
@@ -857,9 +961,13 @@ public partial class Program
     public static void EliminarProfesor()
     {
 
+        //limpiar listas de profesores y salones
+
         profesores.Clear();
         salones.Clear();
 
+
+//obtener profesores y salones de los archivos
 
         DeserializarXMLProfesores();
         DeserializarXMLSalones();
@@ -868,12 +976,18 @@ public partial class Program
 
         string Nomina = CalcularHash(ReadLine()); // En un entorno real, se debe encriptar la Contrasenia  y compararla con la almacenada.
 
+
+//verificar si hay un profesor con esa nomina
         Profesor? profesor = profesores.FirstOrDefault(p => p.Nomina == Nomina);
 
         if (profesor != null)
         {
+
+        //si hay un profesor con esa nomina, borrarlo de la lista de profesores
             profesores.Remove(profesor);
             WriteLine("Profesor eliminado correctamente.");
+
+            //ademas borrarlo de todas las relaciones con los salones
 
             foreach (var item in salones)
             {
@@ -886,7 +1000,7 @@ public partial class Program
             }
 
 
-
+//guardar cambios serializando
             SerializarXMLProfesores();
             SerializarXMLSalones();
 
@@ -905,14 +1019,20 @@ public partial class Program
 
         int opcion;
 
+        //limpiar listas de profesores y salones
+
         almacenistas.Clear();
         profesores.Clear();
+
+        //obtener profesores y salones de los archivos
 
         DeserializarXMLAlmacenistas();
         DeserializarXMLProfesores();
 
         do
         {
+
+            //menu de opciones
             WriteLine("1: Profesor");
             WriteLine("2: Almacenista");
             WriteLine("3: Salir");
@@ -946,8 +1066,12 @@ public partial class Program
 
     }
 
+
+//Generaciones de reportes
     public static void GenerarReportes()
     {
+
+        //campos de opciones
         WriteLine("Campos de organización:");
         WriteLine("1. Nombre Completo");
         WriteLine("2. Nomina");
@@ -962,6 +1086,8 @@ public partial class Program
 
         switch (opcion)
         {
+
+            //Mandar reporte segun el cambio
             case 1:
                 GenerarReporte("NombreCompleto");
                 break;
@@ -1026,6 +1152,8 @@ public partial class Program
 
     public static void OrdenarProfesores(string campoOrganizacion)
     {
+
+        //ordenar los campos de los profesores segun el campo de organizacion (de la A-Z)
         switch (campoOrganizacion)
         {
             case "NombreCompleto":
@@ -1054,6 +1182,8 @@ public partial class Program
     // Función para calcular el hash de una cadena usando SHA256
     public static string CalcularHash(string input)
     {
+
+        //Encriptar de acuerdo al algoritmo SHA256
         using (SHA256 sha256Hash = SHA256.Create())
         {
             byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
